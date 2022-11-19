@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Why is SponsorBlock down?!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/svg+xml" href="refresh.svg">
+    <link rel="icon" type="image/png" href="refresh.png">
+</head>
+
+<body>
+    <div class="hero">
+        <h1>Why is SponsorBlock down?!</h1>
+        <h5>Are you tired of SponsorBlock being down? Are the moderators telling you to wait 3 years? Our Free
+            Decentralized™ Serverless™ Web3™ API will retrieve the latest reason for the outage!</h5>
+        <div class="reason-box float">
+            <h1 style="margin-bottom: 0; padding: 1em;">
+                <span id="prefix"></span>
+                <span id="adj" class="hue1"></span>
+                <span id="noun" class="hue2"></span>
+                <span id="reason" class="hue3"></span>
+            </h1>
+        </div>
+        <button onclick="generate()">Already pinned in #general</button>
+        <script type="text/javascript" src="reasons.js"></script>
+    </div>
+    <footer>
+    Parody by mchangrh | <a href="https://github.com/mchangrh/why-is-sb-down">GitHub</a> | <a href="https://status.sponsor.ajay.app/">actual status page</a> | Inspired by <a href="https://whythefuckwasibreached.com/">Why the fuck was I breached?
+    </a>
+    </footer>
+    <script>
+        const getRand = (choices) => choices[Math.floor(Math.random() * choices.length)];
+        const generate = () => {
+            let useGlobal = Math.random() < 0.05;
+            if (useGlobal) {
+                const globalReason = getRand(reasons.global);
+                document.getElementById("prefix").innerText = "";
+                document.getElementById("adj").innerText = "";
+                document.getElementById("noun").innerText = "";
+                document.getElementById("reason").innerText = globalReason;
+                return
+            }
+            let adj = getRand(reasons.adj);
+            prefix = (adj.length) ? "The" : "";
+            const noun = getRand(reasons.noun);
+            const reason = getRand(reasons.reason);
+            document.getElementById("prefix").innerHTML = prefix;
+            document.getElementById("adj").innerText = adj;
+            document.getElementById("noun").innerText = noun;
+            document.getElementById("reason").innerText = reason;
+        }
+        generate()
+    </script>
+</body>
