@@ -1,0 +1,1 @@
+Free Decentralized™ Serverless™ Web3™ API for retreiving the latest reason for SponsorBlock out(r)ages

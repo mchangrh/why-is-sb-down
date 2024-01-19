@@ -27,7 +27,10 @@ const reasons = {
         "banned",
         "undefined",
         "free trial of",
-        "sponsor of today's video,"
+        "sponsor of today's video,",
+        "dearrowed",
+        "Web3.5",
+        "latest beta of",
     ],
     "noun": [
         "developer",
@@ -60,7 +63,15 @@ const reasons = {
         "webhook",
         "mass submissions",
         "load balancer",
-        "csv download"
+        "csv download",
+        "title you wouldn't have clicked on",
+        "thumbnail you wouldn't have clicked on",
+        "@sponsorblock@fosstodon.org",
+        "thumbnail that really wasn't that clickbait",
+        "niche aggressive category",
+        "funny jokes",
+        "LTT pipeline",
+        "SponsorBlock AI Summarization",
     ],
     "reason": [
         "ran out of memory",
@@ -100,13 +111,27 @@ const reasons = {
         "was disabled for load reasons",
         "just stopped working",
         "got paywalled",
-        "was blocked by Russia"
+        "was blocked by Russia",
+        "ran out of ChatGPT Plus credits",
+        "ran out of SponsorBlockCoins",
+        "touched grass",
+        "wasn't pinned in #general",
+        "was a good idea in theory, but in practice used by geeks",
+        "wasn't clicked on by enough subscribers",
+        "failed Halal certification",
+        "used a shirk which is related to black magic",
+        "solved all clickbait on youtube",
+        "was replaced by a moderator with the exact same timings",
+        "unionized",
+        "hit that subscribe button",
     ],
     "global": [
         "[object Object]",
         "error: undefined",
         "Loading...",
         "SponsorBlock isn't down",
-        "Activate Windows \n Go to Settings to activate Windows"
+        "Activate Windows \n Go to Settings to activate Windows",
+        "I'm sorry, but I cannot fulfill this request as it goes against OpenAI use policy",
+        "Ad blockers are not allowed on YouTube\n It looks like you may be using an ad blocker.",
     ]
 }
